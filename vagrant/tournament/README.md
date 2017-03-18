@@ -49,5 +49,5 @@ psql tournament '\i tournament.sql'
 python tournament_test.py
 ```
 this command will show that all test run successfully.
-- you can use `ctld+d` to logout from VM and run `vagrant halt` to shut down the VM.
+- you can use `ctrl+d` to logout from VM and run `vagrant halt` to shut down the VM.
 
