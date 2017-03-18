@@ -29,9 +29,25 @@ clone or download repository on local machine.
 vagrant up 
 ```
 this will take some time as it download Linux ubuntu OS on VM
--login into by running
+- login into by running
 ```
 vagrant ssh
 ```
 now you are logged into VM as user vagrant.
+### using tournament.sql
+- on VM navigate to tournament directory by running
+```
+cd /vagrant/tournament
+```
+- connet to the database and to use tables and views from **tournament.sql** use command given below:
+```
+psql tournament '\i tournament.sql'
+```
+### using tournament_test.py
+- to test the functions define in **tournament.py** run command given below on terminal
+```
+python tournament_test.py
+```
+this command will show that all test run successfully.
+- you can use `ctld+d` to logout from VN and run `vagrant halt` to shut down the VM.
 
