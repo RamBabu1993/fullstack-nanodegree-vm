@@ -7,13 +7,31 @@ The project uses Python and postgreSQL to implement <a href="https://en.wikipedi
 ## Install
 <ul>
 <li> <a href="https://www.python.org/downloads/"> python</a> 2.7 or higher.</li>
-<li> <a href="http://initd.org/psycopg/"> psycopg</a> package</li>
+<li> <a href="http://initd.org/psycopg/"> psycopg</a> package already installed on VM</li>
 <li> <a href="https://www.vagrantup.com/"> Vagrant </a> and <a href="https://www.virtualbox.org/wiki/Downloads"> VM</a></li>
 </ul>
 
 ## Required files
 <ul>
-   <li> `tournament.py`-contains functions to interact with database</li>
-   <li> `tournament.sql`-to create database, table and views </li>
-   <li> `tournament_test.py`-Tests the implementation of functions defined in `tournament.py` </li>
+<li> <strong>tournament.py </strong> - Contains functions to interact with database</li>
+   <li> <strong>tournament.sql</strong> - To create database, table and views </li>
+   <li> <strong>tournament_test.py</strong> - Tests the implementation of functions defined in `tournament.py` </li>
 </ul>
+
+## Steps to run the project
+clone or download repository on local machine.
+
+### using Vagrant VM
+- install vagrant and VM. Vagrant VM has installed and configured postgreSQL and psql command line interface. so no need to install on local machine.
+- used terminal and navigate to the directory that contains repository.
+- start VM by running
+``` 
+vagrant up 
+```
+this will take some time as it download Linux ubuntu OS on VM
+-login into by running
+```
+vagrant ssh
+```
+now you are logged into VM as user vagrant.
+
