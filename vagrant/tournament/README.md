@@ -15,7 +15,7 @@ The project uses Python and postgreSQL to implement <a href="https://en.wikipedi
 <ul>
 <li> <strong>tournament.py </strong> - Contains functions to interact with database</li>
    <li> <strong>tournament.sql</strong> - To create database, table and views </li>
-   <li> <strong>tournament_test.py</strong> - Tests the implementation of functions defined in `tournament.py` </li>
+   <li> <strong>tournament_test.py</strong> - Tests the implementation of functions defined in **tournament.py** </li>
 </ul>
 
 ## Steps to run the project
@@ -49,5 +49,5 @@ psql tournament '\i tournament.sql'
 python tournament_test.py
 ```
 this command will show that all test run successfully.
-- you can use `ctld+d` to logout from VN and run `vagrant halt` to shut down the VM.
+- you can use `ctld+d` to logout from VM and run `vagrant halt` to shut down the VM.
 
