@@ -12,24 +12,22 @@ The project uses Python and postgreSQL to implement <a href="https://en.wikipedi
 </ul>
 
 ## Required files
-<ul>
-<li> <strong>tournament.py </strong> - Contains functions to interact with database</li>
-   <li> <strong>tournament.sql</strong> - To create database, table and views </li>
-   <li> <strong>tournament_test.py</strong> - Tests the implementation of functions defined in **tournament.py** </li>
-</ul>
+- **tournament.py** - Contains functions to interact with database
+- **tournament.sql** - contains database, table and views created for project
+- **tournament_test.py** - Tests the implementation of functions defined in **tournament.py**
 
 ## Steps to run the project
-clone or download repository on local machine.
+Clone or download repository on local machine.
 
 ### using Vagrant VM
-- install vagrant and VM. Vagrant VM has installed and configured postgreSQL and psql command line interface. so no need to install on local machine.
-- used terminal and navigate to the directory that contains repository.
-- start VM by running
+- Install vagrant and VM. Vagrant VM has installed and configured postgreSQL and psql command line interface. so no need to install on local machine.
+- Open terminal and navigate to the directory that contains repository.
+- Start VM by running
 ``` 
 vagrant up 
 ```
 this will take some time as it download Linux ubuntu OS on VM
-- login into by running
+- Login into by running
 ```
 vagrant ssh
 ```
@@ -39,7 +37,7 @@ now you are logged into VM as user vagrant.
 ```
 cd /vagrant/tournament
 ```
-- connet to the database and to use tables and views from **tournament.sql** use command given below:
+- to connect with database and to use tables and views from **tournament.sql** use command given below:
 ```
 psql tournament '\i tournament.sql'
 ```
